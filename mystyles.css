@@ -1,0 +1,16 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+  background-color: orangered;
+}
+h1 {
+  color: black;
+}
+p {
+  color: whitesmoke;
+}
+ul {
+color: whitesmoke;
+}
+ol {
+color: whitesmoke;
+}
