@@ -2,9 +2,98 @@
     <html>
         <body>
             <h1>Remote Guided Maintenance</h1>
-                <h4><em>Does your organisation own a large fleet of vehicles that operate throughout Australia?</em></h4>  
-                <h4><em>Do you want to save thousands of dollars in call-out fees when your vehicles break down?</em></h4>
-                    <p>I would like to develop an application that can be installed onto the <a href="https://www.youtube.com/watch?v=XwOnHqiNAeU">Microsoft HoloLens</a> or other Augmented Reality (AR) platform. The application will give vehicle drivers access to all the important information necessary to maintain their vehicle, including tabulated data, operating instructions, troubleshooting and diagnosis guides. The technology will also function as a live video transmitter between the driver and a remote mechanic. The device with this application will save drivers hours of time waiting on the side of the road for a mechanic and will save the fleet owners thousands in break down call-out fees imposed by mobile mechanics.</p>
-        
-        </body>
+                <h4><em>Does your organisation own a large fleet of vehicles that operate throughout Australia?<br><br>Do you want to save thousands of dollars in call-out fees when your vehicles break down?</em></h4>
+                    <h2>Overview</h2>
+                        <p>I would like to develop an application that can be installed onto the <a href="https://www.youtube.com/watch?v=XwOnHqiNAeU">Microsoft HoloLens II</a> or other Augmented Reality (AR) platform. The application will give vehicle drivers access to all the important information necessary to maintain their vehicle, including tabulated data, operating instructions, troubleshooting and diagnosis guides. The technology will also function as a live video transmitter between the driver and a remote mechanic. The device with this application will save drivers hours of time waiting on the side of the road for a mechanic and will save the fleet owners thousands in break down call-out fees imposed by mobile mechanics.</p>
+                    <h2>Context</h2>
+                        <p>Transport and Logistics cease when trucks and buses break down. Often companies must send technicians out from a workshop to diagnose, fix and/or recover broken-down vehicles. Alternatively, companies pay large call-out fees to contracted mobile mechanics. The technicians who deploy to support breakdowns are often going in blind, having only received vague fault descriptions in a work request email or over the phone. As a result, Technicians may take the incorrect tools and parts for the job or they may be driving out to do a repair that cannot be achieved on the side of the road. Sometimes the fix is simple and could be achieved by the driver. Sometimes the breakdown has occurred because the driver did not fully understand the operation of the vehicle or the daily maintenance requirements and fluid specifications of the vehicle.<br><br> 
+                        The Remote Guided Maintenance (RGM) concept seeks to address all these issues by a providing each vehicle of an organisation with a wearable Augmented Reality device. The device would be installed with a practical application tailored to the make and model of the vehicle it belongs in.</p>
+                    <h2>Application Design</h2>   
+                        <p>The application will open with an index page from which the user can navigate to five main pages:</p>
+                            <ol>
+                            <h4>First and Last Parade</h4>
+                                <p>This page guides the driver through all the checks that need to be performed on the truck before it is started. It also guides the driver through checks that should be conducted at the end of the shift when the vehicle is shutdown, for example;</p> 
+                                    <p>The following checks are to occur before vehicle is started:</p>
+                                    <ul>
+                                        <li>Engine oil level </li>
+                                        <li>Brake fluid level </li>
+                                        <li>Windscreen washer level</li>
+                                        <li>Tyre checks</li>
+                                        <li>Under vehicle leak checks </li>
+                                        <li>General component security checks; etc  </li>
+                                    </ul>
+                            <h4>Tabulated Data  </h4>
+                                <p>Tab Data is important for a driver to be aware of. Knowing the height of the vehicle will prevent you from driving under overpasses or into car parks that are too low. Knowing the weight of your vehicle will prevent you from driving over bridges that cannot support the weight of the vehicle.</p>
+                                    <ul>   
+                                    <li>Vehicle dimensions</li>
+                                    <li>Vehicle weights (laden, unladen, bridge classification)</li>
+                                    <li>Fluid types</li>
+                                    <li>Fluid quantities; etc</li>
+                                    </ul>
+                            <h4>Component Identifier and Descriptor</h4>
+                                <p>This page details the name, location, description, and function of all components that make up the vehicle. Modern trucks come fitted with many buttons and toggles, it can be hard to remember what all the functions are and how to use them.</p>
+                                <p>There are three methods of finding a component on this page:</p>
+                                    <ol>
+                                    <li>Looking at the vehicle with the AR goggles and pointing to a component</li>
+                                    <li>Using voice to search for an item – “Where are the Air Tanks?”</li>
+                                    <li>A categorical drop-down list of components to select from, for example;</li>
+                                        <ul>
+                                        <li>Drive Train</li>
+                                            <ul> 
+                                            <li>Engine</li>
+                                            <li>Transmission</li>
+                                            <li>Front Axle</li>
+                                            </ul>
+                                        <li>Body</li>
+                                            <ul>
+                                            <li>Cabin</li>
+                                            <li>Tray</li>
+                                            </ul>
+                                        <li>Fuel System</li>
+                                            <ul>
+                                                <li>Fuel Tank</li>
+                                                <li>Fuel Filter</li>
+                                                <li>Fuel Lines</li>
+                                            </ul>
+                                        <li>Brake System</li>
+                                            <ul>
+                                                <li>Brake Fluid Reservoir</li>
+                                                <li>Brake Lines;  etc</li>
+                                            </ul>
+                                        </ul>
+                                    </ol>
+                            <h4>Troubleshooting and Diagnosis</h4>
+                                <p>This function takes a driver through a step by step guide on troubleshooting vehicle faults. For example, if the vehicle does not start then the driver would navigate to this page and search for the appropriate troubleshooting guide using either voice command or scrolling through a list.</p>
+                                <p>A sequenced diagnosis guide may look like this:</p>
+                                    <p>Truck does not start:</p>
+                                        <ul>
+                                            <li>Check battery voltage – The location of the battery voltage indicator is shown to the driver, and the minimum voltage specification is made known</li>
+                                            <li>Check park brake is applied – The driver is directed to the park brake and shown which position the toggle is supposed to be in. If the toggle is in the correct position, then the driver can say “next”</li>
+                                            <li>Check battery – The driver is guided to the battery compartment and shown what to check on the battery such as terminal security and electrolyte level indicator</li>
+                                            <li>Check wiring – The driver is shown the wiring route from the battery to the starter motor and other key electrical components</li>
+                                            <li>Check starter motor – The driver is shown the location of the starter motor and what it is supposed to look like and which terminals to check for security</li>
+                                        </ul>
+                                <p>If the fault is identified, the application will provide guidance on how it can be rectified. If the fault requires tools or equipment, then the driver will be directed to the page: <em>Contact the Mechanic</em>.</p>
+                            <h4>Contact the Mechanic</h4>
+                                <p>This page functions as a video conference host between the AR device and an application installed on the phone of a mechanic. The mechanic is accessible when the drivers AR goggles and mechanics phone are both connected to a wireless network. The mechanic can see exactly what the driver is looking at and ask them questions. Some repairs may be achievable by the driver under the guidance of the mechanic. For faults that are not able to be rectified remotely, the mechanic will need to drive out and repair the vehicle himself or have the vehicle recovered to the workshop. Since the mechanic has been able to see the fault, they will know exactly what tools and parts to take to the job, or if it is unrepairable and not worth driving to. In which case, recovery can be actioned without a wasted drive to the site.</p>
+                            </ol>
+                        <p><em>Another function that could be possible is to have the AR goggles able to connect the Electronic Control Unit (ECU or Computer) of the vehicle. This connectedness will allow electronic vehicle faults to be displayed through the goggles. The function could also allow technicians to remotely connect into the ECU as a supplement in diagnosis and potentially allow faults to be rectified.</em></p>
+                    <h2>Skills Required</h2>
+                        <p>Ideally, members would have the following social and human characteristics and skills:</p>
+                            <ul>
+                                <li>A high level of enthusiasm  </li>
+                                <li>Excellent listening skills  </li>
+                                <li>A preparedness to undertake tasks that they are not necessarily or competent in  </li>
+                                <li>Strive to identify better ways of achieving task goals even if the technique has not been tried and tested</li>
+                            </ul>
+                        <p>Team members with these technical skillsets are preferred:</p>
+                            <ul>
+                                <li>Project manager: Responsible for interfacing between the development team and the customer. A degree in IT majoring in Business would be ideal. The manager understands the customer’s needs and their timeline. The manager keeps the team on track by setting due by dates and scheduling tie ins to track progress. The manager notifies the team if any parameters for the development change and if the team has queries for the customer, they go through the manager.</li>
+                                <li>Qualified Heavy Automotive Mechanic: Having one member qualified as a mechanic will save many questions back and forth with the customer. This member will have a firm grasp on what information is important to the truck driver and the customers mechanic. This member will know the names and locations of all the components on the vehicles and be able to create logical sequencing in the diagnostic function of the device.</li>
+                                <li>Data Scientist: Their expertise will be relied upon to support the machine learning aspect of the digital infrastructure. The data scientist will largely be focused on the augmented reality component of the application.</li>
+                                <li>Full stack developer: The final requirement is one member with experience in front and back end development, preferably holding a bachelor of IT majoring in Application Development. The role of the App developer will be paramount in tying all aspects of the application, technology, and the customers’ requirements together.</li>
+                            </ul>
+                    <h2>Outcome</h2>
+                        <p>The RGM concept has largely been tailored to large fleet owning organisation but could just as easily be adapted to suit everyday people. Nobody likes waiting on the side of the road for the mobile mechanic to arrive, especially when he says, “sorry there’s nothing I can do with your car on the side of the road”. This concept would save people paying roadside assistance fees, it would increase people’s awareness about their own vehicle, and it would result in vehicles lasting for much longer. When it comes to large organisations, a HoloLens is worth about $3500, most trucks today are worth in excess of $100 000, it would make sense that they pay a small amount extra for this device that will pay dividends in the long run.</p>
+  </body>
     </html>
